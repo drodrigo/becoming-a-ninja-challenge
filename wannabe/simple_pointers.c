@@ -1,12 +1,9 @@
 #include <stdio.h>
 
 int main(int argc, char** argv){
-  int n = 5;
+  int n = 10;
 
-  int *pointer;
-
-  pointer  = &n;
-
+  int *pointer = &n;
 
   //Accessing the value
   printf("%d\n", *pointer);
