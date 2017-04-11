@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int main(int argc, char** argv){
+int main(){
   //to the left to the left....
   unsigned int n = 1 << 30;
   printf("%d  \n", n);
