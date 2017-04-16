@@ -1,10 +1,15 @@
 #include <iostream>
 #include <thread>
+#include <mutex>
 
 using namespace std;
 
+mutex mu;
+
 void print_number(int number){
+    mu.lock();
     cout << number  << "\n";
+    mu.unlock();
 }
 
 int main(){
